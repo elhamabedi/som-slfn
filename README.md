@@ -10,53 +10,53 @@ This project explores the fundamental differences between unsupervised learning 
 
 ## Tasks Implemented
 ### Task 1: Clustering Digits Dataset with SOM
-###### Implemented SOM clustering using MiniSom library
-#### Trained SOMs with two different grid configurations:
-###### 4×4 grid (16 neurons)
-###### 20×20 grid (400 neurons)
-#### Visualized clustering results including:
-###### Weight vectors for each neuron
-###### Hit maps showing data distribution across neurons
-###### Sample images mapped to representative neurons
-#### Calculated quantization error to evaluate representation quality
-#### Identified and analyzed dead neurons (neurons with no mapped samples)
-#### Compared clustering performance between grid sizes
+Implemented SOM clustering using MiniSom library
++ Trained SOMs with two different grid configurations:
+    + 4×4 grid (16 neurons)
+    + 20×20 grid (400 neurons)
++ Visualized clustering results including:
+    + Weight vectors for each neuron
+    + Hit maps showing data distribution across neurons
+    + Sample images mapped to representative neurons
++ Calculated quantization error to evaluate representation quality
++ Identified and analyzed dead neurons (neurons with no mapped samples)
++ Compared clustering performance between grid sizes
 
 
 ### Task 2: Classification of Digits Dataset Using SOM
-###### Assigned class labels to neurons using majority voting from training data
-#### Classified test samples by mapping to Best Matching Units (BMUs)
-#### Evaluated classification performance:
-###### Accuracy metrics for both grid configurations
-###### Confusion matrices
-###### Precision, recall, and F1-scores per class
-#### Visualized neuron class maps with dead neurons marked distinctly
+Assigned class labels to neurons using majority voting from training data
++ Classified test samples by mapping to Best Matching Units (BMUs)
++ Evaluated classification performance:
+    + Accuracy metrics for both grid configurations
+    + Confusion matrices
+    + Precision, recall, and F1-scores per class
++ Visualized neuron class maps with dead neurons marked distinctly
 
 
 ### Task 3: Classification with Single Layer Feedforward Network (SLFN)
-###### Implemented SLFN from scratch using only NumPy (no deep learning frameworks)
-#### Architecture:
-###### Input layer: 7 features (Pclass, Sex, Age, SibSp, Parch, Fare, Embarked)
-###### Hidden layer: 128 neurons with ReLU activation
-###### Output layer: 1 neuron with sigmoid activation for binary classification
+Implemented SLFN from scratch using only NumPy (no deep learning frameworks)
++ Architecture:
+    + Input layer: 7 features (Pclass, Sex, Age, SibSp, Parch, Fare, Embarked)
+    + Hidden layer: 128 neurons with ReLU activation
+    + Output layer: 1 neuron with sigmoid activation for binary classification
 
-#### Implemented key components:
-###### Forward propagation with ReLU and sigmoid activations
-###### Binary cross-entropy loss computation
-###### Backpropagation algorithm for gradient calculation
-###### Gradient descent for weight updates
++ Implemented key components:
+    + Forward propagation with ReLU and sigmoid activations
+    + Binary cross-entropy loss computation
+    + Backpropagation algorithm for gradient calculation
+    + Gradient descent for weight updates
 
-#### Preprocessed Titanic dataset:
-###### Handled missing values
-###### Encoded categorical variables
-###### Normalized numerical features
-###### 80/20 train-test split
++ Preprocessed Titanic dataset:
+    + Handled missing values
+    + Encoded categorical variables
+    + Normalized numerical features
+    + 80/20 train-test split
 
-#### Evaluated model performance:
-###### Accuracy, precision, recall, F1-score
-###### Confusion matrix visualization
-###### ROC curve and AUC score
-###### Training loss curve
++ Evaluated model performance:
+    + Accuracy, precision, recall, F1-score
+    + Confusion matrix visualization
+    + ROC curve and AUC score
+    + Training loss curve
 
 ## Datasets Used:
 
